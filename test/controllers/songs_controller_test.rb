@@ -14,6 +14,6 @@ class SongsControllerTest < ActionDispatch::IntegrationTest
     assert_response 200
 
     data = JSON.parse(response.body)
-    assert_equal ["title", "album", "artist", "year"], data.keys
+    assert_equal ["id", "title", "album", "artist", "year"], data.keys
   end
 end
